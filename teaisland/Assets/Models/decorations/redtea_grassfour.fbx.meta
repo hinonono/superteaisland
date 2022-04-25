@@ -1,8 +1,59 @@
 fileFormatVersion: 2
-guid: 2ac83c4e31d5f49d498f906ae413b5e0
+guid: c2c0f92e342934c2bbc936a9f7e4a4bf
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -253997193412647273
+    second: Sphere139|Box003|Take 001|BaseLayer
+  - first:
+      74: -5226132909854969408
+    second: Sphere139|Box012|Take 001|BaseLayer
+  - first:
+      74: -817131410165577018
+    second: Sphere139|Box012|Take 001|BaseLayer.001
+  - first:
+      74: 5476895199927785863
+    second: Sphere139|Box012|Take 001|BaseLayer.002
+  - first:
+      74: 1768300139846491151
+    second: Sphere139|Box012|Take 001|BaseLayer.003
+  - first:
+      74: -2464205967201918223
+    second: Sphere139|Box012|Take 001|BaseLayer.004
+  - first:
+      74: 2465773000632534874
+    second: Sphere139|Sphere002|Take 001|BaseLayer
+  - first:
+      74: 1828069634563497815
+    second: Sphere139|Sphere002|Take 001|BaseLayer.001
+  - first:
+      74: -683041470035815828
+    second: Sphere139|Sphere002|Take 001|BaseLayer.002
+  - first:
+      74: 6242693155841501291
+    second: Sphere139|Sphere002|Take 001|BaseLayer.003
+  - first:
+      74: -6425466048609417221
+    second: Sphere139|Sphere002|Take 001|BaseLayer.004
+  - first:
+      74: 1816767936260266296
+    second: Sphere139|Sphere137|Take 001|BaseLayer
+  - first:
+      74: -8598193962369529474
+    second: Sphere139|Sphere137|Take 001|BaseLayer.001
+  - first:
+      74: 6398077124899275402
+    second: Sphere139|Sphere138|Take 001|BaseLayer
+  - first:
+      74: -4312506734581183018
+    second: Sphere139|Sphere138|Take 001|BaseLayer.001
+  - first:
+      74: -9172128044648901088
+    second: Sphere139|Sphere139|Take 001|BaseLayer
+  - first:
+      74: -8991776759037658773
+    second: Sphere139|Sphere139|Take 001|BaseLayer.001
   externalObjects: {}
   materials:
     materialImportMode: 2

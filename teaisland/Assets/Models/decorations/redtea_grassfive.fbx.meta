@@ -1,62 +1,50 @@
 fileFormatVersion: 2
-guid: 848ae395bfe0e48cbb05b3e7f35d415a
+guid: eaf5ff336f4724a979e0083b8a04f899
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -745651451324350479
-    second: Box161|Box002|Take 001|BaseLayer
+      74: -253997193412647273
+    second: Sphere139|Box003|Take 001|BaseLayer
   - first:
-      74: 8901537047723916899
-    second: Box161|Box002|Take 001|BaseLayer.001
+      74: -5226132909854969408
+    second: Sphere139|Box012|Take 001|BaseLayer
   - first:
-      74: -3159525075221607246
-    second: Box161|Box003|Take 001|BaseLayer
+      74: -817131410165577018
+    second: Sphere139|Box012|Take 001|BaseLayer.001
   - first:
-      74: -8431479924974460122
-    second: Box161|Box003|Take 001|BaseLayer.001
+      74: 5476895199927785863
+    second: Sphere139|Box012|Take 001|BaseLayer.002
   - first:
-      74: -7339302660229773590
-    second: Box161|Box161|Take 001|BaseLayer
+      74: 1768300139846491151
+    second: Sphere139|Box012|Take 001|BaseLayer.003
   - first:
-      74: -3486812271302916020
-    second: Box161|Box162|Take 001|BaseLayer
+      74: -2464205967201918223
+    second: Sphere139|Box012|Take 001|BaseLayer.004
   - first:
-      74: 1055769064633609902
-    second: Box161|Box163|Take 001|BaseLayer
+      74: 2465773000632534874
+    second: Sphere139|Sphere002|Take 001|BaseLayer
   - first:
-      74: 3097510602177696226
-    second: Box161|Box164|Take 001|BaseLayer
+      74: 1828069634563497815
+    second: Sphere139|Sphere002|Take 001|BaseLayer.001
   - first:
-      74: 280728435581202173
-    second: Box161|Box165|Take 001|BaseLayer
+      74: -683041470035815828
+    second: Sphere139|Sphere002|Take 001|BaseLayer.002
   - first:
-      74: -3323595946765644097
-    second: Box161|GeoSphere002|Take 001|BaseLayer
+      74: 6242693155841501291
+    second: Sphere139|Sphere002|Take 001|BaseLayer.003
   - first:
-      74: 306024249683855145
-    second: Box161|GeoSphere002|Take 001|BaseLayer.001
+      74: -6425466048609417221
+    second: Sphere139|Sphere002|Take 001|BaseLayer.004
   - first:
-      74: -8299086049701220097
-    second: Box161|GeoSphere003|Take 001|BaseLayer
+      74: 1816767936260266296
+    second: Sphere139|Sphere137|Take 001|BaseLayer
   - first:
-      74: 436436339301334715
-    second: Box161|GeoSphere003|Take 001|BaseLayer.001
+      74: 6398077124899275402
+    second: Sphere139|Sphere138|Take 001|BaseLayer
   - first:
-      74: 8447045324986042319
-    second: Box161|Sphere062|Take 001|BaseLayer
-  - first:
-      74: -42351293944302183
-    second: Box161|Sphere063|Take 001|BaseLayer
-  - first:
-      74: -6699808118452813418
-    second: Box161|Sphere064|Take 001|BaseLayer
-  - first:
-      74: 6105184772617351788
-    second: Box161|Sphere065|Take 001|BaseLayer
-  - first:
-      74: -7396938028045340906
-    second: Box161|Sphere066|Take 001|BaseLayer
+      74: -9172128044648901088
+    second: Sphere139|Sphere139|Take 001|BaseLayer
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -88,7 +76,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 25
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +127,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 25
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

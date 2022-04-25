@@ -1,62 +1,8 @@
 fileFormatVersion: 2
-guid: 848ae395bfe0e48cbb05b3e7f35d415a
+guid: b3f89d7c049ce4595863cf65ff4574f8
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: -745651451324350479
-    second: Box161|Box002|Take 001|BaseLayer
-  - first:
-      74: 8901537047723916899
-    second: Box161|Box002|Take 001|BaseLayer.001
-  - first:
-      74: -3159525075221607246
-    second: Box161|Box003|Take 001|BaseLayer
-  - first:
-      74: -8431479924974460122
-    second: Box161|Box003|Take 001|BaseLayer.001
-  - first:
-      74: -7339302660229773590
-    second: Box161|Box161|Take 001|BaseLayer
-  - first:
-      74: -3486812271302916020
-    second: Box161|Box162|Take 001|BaseLayer
-  - first:
-      74: 1055769064633609902
-    second: Box161|Box163|Take 001|BaseLayer
-  - first:
-      74: 3097510602177696226
-    second: Box161|Box164|Take 001|BaseLayer
-  - first:
-      74: 280728435581202173
-    second: Box161|Box165|Take 001|BaseLayer
-  - first:
-      74: -3323595946765644097
-    second: Box161|GeoSphere002|Take 001|BaseLayer
-  - first:
-      74: 306024249683855145
-    second: Box161|GeoSphere002|Take 001|BaseLayer.001
-  - first:
-      74: -8299086049701220097
-    second: Box161|GeoSphere003|Take 001|BaseLayer
-  - first:
-      74: 436436339301334715
-    second: Box161|GeoSphere003|Take 001|BaseLayer.001
-  - first:
-      74: 8447045324986042319
-    second: Box161|Sphere062|Take 001|BaseLayer
-  - first:
-      74: -42351293944302183
-    second: Box161|Sphere063|Take 001|BaseLayer
-  - first:
-      74: -6699808118452813418
-    second: Box161|Sphere064|Take 001|BaseLayer
-  - first:
-      74: 6105184772617351788
-    second: Box161|Sphere065|Take 001|BaseLayer
-  - first:
-      74: -7396938028045340906
-    second: Box161|Sphere066|Take 001|BaseLayer
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -88,7 +34,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 25
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +85,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 25
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
