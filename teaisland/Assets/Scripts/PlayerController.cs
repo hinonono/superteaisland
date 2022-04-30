@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //控制player移動
     private Player playerInput;
 
     private CharacterController controller;
