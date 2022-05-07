@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 public class InventoryObject : ScriptableObject
 {
     public string savePath;
-    private ItemDatabaseObject database;
+    public ItemDatabaseObject database;
     public Inventory Container;
     
 
@@ -18,9 +18,15 @@ public class InventoryObject : ScriptableObject
 
     public void AddItem(Item _item, int _amount)
     {
+        if (_item.buffs.Length > 0)
+        {
+            Container.Items.Add(new InventorySlot(_item.Id, _item, _amount));
+            return;
+        }
+
         for (int i = 0; i < Container.Items.Count; i++)
         {
-            if (Container.Items[i].item == _item)
+            if (Container.Items[i].item.Id == _item.Id)
             {
                 Container.Items[i].AddAmount(_amount);
                 return;
