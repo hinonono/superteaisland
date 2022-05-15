@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 388506335}
   - component: {fileID: 388506334}
   - component: {fileID: 388506337}
+  - component: {fileID: 388506336}
   m_Layer: 0
   m_Name: Inventory Panel
   m_TagString: Untagged
@@ -595,14 +596,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.49803922}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: a3c14bb7917094081800ca12c8224c3f, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -620,6 +621,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388506332}
   m_CullTransparentMesh: 1
+--- !u!114 &388506336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388506332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 10
+    m_Right: 10
+    m_Top: 40
+    m_Bottom: 40
+  m_ChildAlignment: 1
+  m_Spacing: -180
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!114 &388506337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,10 +662,10 @@ MonoBehaviour:
   inventoryPrefab: {fileID: 849585042943988658, guid: 4bc744f83c362489ba1825d4fd1e5f78, type: 3}
   inventory: {fileID: 11400000, guid: 19414fdfe20bf44da823b185116c8de9, type: 2}
   X_START: 0
-  Y_START: 175
-  X_SPACE_BETWEEN_ITEM: 50
+  Y_START: 0
+  X_SPACE_BETWEEN_ITEM: 0
   NUMBER_OF_COLUMN: 1
-  Y_SPACE_BETWEEN_ITEMS: 150
+  Y_SPACE_BETWEEN_ITEMS: 0
 --- !u!1 &482054145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,10 +3163,10 @@ RectTransform:
   m_Father: {fileID: 1489185098}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: -297}
-  m_SizeDelta: {x: 200, y: 500}
+  m_AnchoredPosition: {x: -54, y: -297}
+  m_SizeDelta: {x: 200, y: -1168}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1619132568
 MonoBehaviour:
@@ -4016,7 +4043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1716118213784329287, guid: 9cf384d4b9ee444db85cd02ffbb16f8a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -40.69995
       objectReference: {fileID: 0}
     - target: {fileID: 1716118213784329287, guid: 9cf384d4b9ee444db85cd02ffbb16f8a, type: 3}
       propertyPath: m_AnchoredPosition.y
