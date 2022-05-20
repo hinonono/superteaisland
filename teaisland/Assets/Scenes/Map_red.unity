@@ -8678,7 +8678,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2768674335453630557, guid: a027fd0da96e24f47a19d7878a943b6c, type: 3}
   m_PrefabInstance: {fileID: 2768674336336398388}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2768674336336398390
+--- !u!114 &2768674336336398393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8687,10 +8687,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2768674336336398389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9554bcde9aa194b9ca99d95ba4cc8da9, type: 3}
+  m_Script: {fileID: 11500000, guid: 75743e15c25de42489955e4aff773ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: 19414fdfe20bf44da823b185116c8de9, type: 2}
 --- !u!1001 &3066488323145393988
 PrefabInstance:
   m_ObjectHideFlags: 0

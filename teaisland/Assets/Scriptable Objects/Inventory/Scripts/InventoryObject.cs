@@ -50,6 +50,8 @@ public class InventoryObject : ScriptableObject
         formatter.Serialize(stream, Container);
         stream.Close();
 
+        Debug.Log("成功了！");
+
     }
 
     [ContextMenu("Load")]

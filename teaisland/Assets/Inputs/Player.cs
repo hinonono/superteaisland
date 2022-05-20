@@ -173,6 +173,54 @@ public partial class @Player : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Inventory"",
+            ""id"": ""02b80514-5b5d-4d11-a6f6-a39723c9bee3"",
+            ""actions"": [
+                {
+                    ""name"": ""SaveInventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""be28868c-7406-4fcb-85a8-c88c33b52945"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LoadInventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""5d688c0a-e26b-4726-b7d2-3a202fa5b8bb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""380ee879-9940-4dbe-ad96-1e137ee5d70f"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SaveInventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f7f56372-9d9a-4707-8c19-f727242a9032"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LoadInventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -185,6 +233,10 @@ public partial class @Player : IInputActionCollection2, IDisposable
         m_Touch = asset.FindActionMap("Touch", throwIfNotFound: true);
         m_Touch_PrimaryContact = m_Touch.FindAction("PrimaryContact", throwIfNotFound: true);
         m_Touch_PrimaryPosition = m_Touch.FindAction("PrimaryPosition", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_SaveInventory = m_Inventory.FindAction("SaveInventory", throwIfNotFound: true);
+        m_Inventory_LoadInventory = m_Inventory.FindAction("LoadInventory", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -322,6 +374,47 @@ public partial class @Player : IInputActionCollection2, IDisposable
         }
     }
     public TouchActions @Touch => new TouchActions(this);
+
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private IInventoryActions m_InventoryActionsCallbackInterface;
+    private readonly InputAction m_Inventory_SaveInventory;
+    private readonly InputAction m_Inventory_LoadInventory;
+    public struct InventoryActions
+    {
+        private @Player m_Wrapper;
+        public InventoryActions(@Player wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SaveInventory => m_Wrapper.m_Inventory_SaveInventory;
+        public InputAction @LoadInventory => m_Wrapper.m_Inventory_LoadInventory;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterface != null)
+            {
+                @SaveInventory.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSaveInventory;
+                @SaveInventory.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSaveInventory;
+                @SaveInventory.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSaveInventory;
+                @LoadInventory.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnLoadInventory;
+                @LoadInventory.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnLoadInventory;
+                @LoadInventory.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnLoadInventory;
+            }
+            m_Wrapper.m_InventoryActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @SaveInventory.started += instance.OnSaveInventory;
+                @SaveInventory.performed += instance.OnSaveInventory;
+                @SaveInventory.canceled += instance.OnSaveInventory;
+                @LoadInventory.started += instance.OnLoadInventory;
+                @LoadInventory.performed += instance.OnLoadInventory;
+                @LoadInventory.canceled += instance.OnLoadInventory;
+            }
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
     public interface IPlayerMainActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -331,5 +424,10 @@ public partial class @Player : IInputActionCollection2, IDisposable
     {
         void OnPrimaryContact(InputAction.CallbackContext context);
         void OnPrimaryPosition(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnSaveInventory(InputAction.CallbackContext context);
+        void OnLoadInventory(InputAction.CallbackContext context);
     }
 }

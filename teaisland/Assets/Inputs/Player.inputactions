@@ -151,6 +151,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Inventory",
+            "id": "02b80514-5b5d-4d11-a6f6-a39723c9bee3",
+            "actions": [
+                {
+                    "name": "SaveInventory",
+                    "type": "Button",
+                    "id": "be28868c-7406-4fcb-85a8-c88c33b52945",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LoadInventory",
+                    "type": "Button",
+                    "id": "5d688c0a-e26b-4726-b7d2-3a202fa5b8bb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "380ee879-9940-4dbe-ad96-1e137ee5d70f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SaveInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7f56372-9d9a-4707-8c19-f727242a9032",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LoadInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
