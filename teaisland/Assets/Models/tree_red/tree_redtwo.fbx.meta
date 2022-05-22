@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: a477eb368038e4d519e0a5eb061e3188
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -3813705986648035981
+    second: Sphere252|Box002|Take 001|BaseLayer
+  - first:
+      74: 3788808292773784885
+    second: Sphere252|Box002|Take 001|BaseLayer.001
+  - first:
+      74: -3872716011365658093
+    second: Sphere252|Box003|Take 001|BaseLayer
+  - first:
+      74: 1652973617093070375
+    second: Sphere252|Box003|Take 001|BaseLayer.001
+  - first:
+      74: -353175388276474366
+    second: Sphere252|Box161|Take 001|BaseLayer
+  - first:
+      74: -1846007755255282923
+    second: Sphere252|Box162|Take 001|BaseLayer
+  - first:
+      74: -8826436871897724731
+    second: Sphere252|Box163|Take 001|BaseLayer
+  - first:
+      74: 5707186227447404537
+    second: Sphere252|Box164|Take 001|BaseLayer
+  - first:
+      74: 1086476783381513155
+    second: Sphere252|Box165|Take 001|BaseLayer
+  - first:
+      74: -4574240493669589897
+    second: Sphere252|Box275|Take 001|BaseLayer
+  - first:
+      74: 2771089994798165087
+    second: Sphere252|Box276|Take 001|BaseLayer
+  - first:
+      74: -4319251000058037410
+    second: Sphere252|Box277|Take 001|BaseLayer
+  - first:
+      74: -3142070292726161255
+    second: Sphere252|Box278|Take 001|BaseLayer
+  - first:
+      74: -2248043857227967845
+    second: Sphere252|Box288|Take 001|BaseLayer
+  - first:
+      74: 8907267164734852785
+    second: Sphere252|Box288|Take 001|BaseLayer.001
+  - first:
+      74: 2829379158539823398
+    second: Sphere252|Box289|Take 001|BaseLayer
+  - first:
+      74: -4066739820831385877
+    second: Sphere252|Box289|Take 001|BaseLayer.001
+  - first:
+      74: -5011751237340420506
+    second: Sphere252|Box290|Take 001|BaseLayer
+  - first:
+      74: 3568543836749907494
+    second: Sphere252|Box290|Take 001|BaseLayer.001
+  - first:
+      74: -7335447373149013566
+    second: Sphere252|Box291|Take 001|BaseLayer
+  - first:
+      74: 7946753017856835918
+    second: Sphere252|Box291|Take 001|BaseLayer.001
+  - first:
+      74: 6414953912554025893
+    second: Sphere252|Box292|Take 001|BaseLayer
+  - first:
+      74: -4238450933121449672
+    second: Sphere252|Box293|Take 001|BaseLayer
+  - first:
+      74: 1228947461812962348
+    second: Sphere252|Box294|Take 001|BaseLayer
+  - first:
+      74: 4638395219574660906
+    second: Sphere252|Box295|Take 001|BaseLayer
+  - first:
+      74: 8396360741597679924
+    second: Sphere252|Box296|Take 001|BaseLayer
+  - first:
+      74: -7802388984502018131
+    second: Sphere252|Box297|Take 001|BaseLayer
+  - first:
+      74: -1373607712985931307
+    second: Sphere252|Box298|Take 001|BaseLayer
+  - first:
+      74: -1595661930091886340
+    second: Sphere252|Box299|Take 001|BaseLayer
+  - first:
+      74: -859516108718161071
+    second: Sphere252|Box300|Take 001|BaseLayer
+  - first:
+      74: -4088136070338365260
+    second: Sphere252|Box301|Take 001|BaseLayer
+  - first:
+      74: 6461641710972587786
+    second: Sphere252|Box302|Take 001|BaseLayer
+  - first:
+      74: -5640845454787358896
+    second: Sphere252|Box303|Take 001|BaseLayer
+  - first:
+      74: -6252244324405743909
+    second: Sphere252|Box304|Take 001|BaseLayer
+  - first:
+      74: -7190809750376849925
+    second: Sphere252|Box305|Take 001|BaseLayer
+  - first:
+      74: 8123586501648022338
+    second: Sphere252|Box306|Take 001|BaseLayer
+  - first:
+      74: -8743319362299676620
+    second: Sphere252|Box307|Take 001|BaseLayer
+  - first:
+      74: 3494928412929910979
+    second: Sphere252|Box308|Take 001|BaseLayer
+  - first:
+      74: 5147606973953300610
+    second: Sphere252|Box309|Take 001|BaseLayer
+  - first:
+      74: -5651240022301892574
+    second: Sphere252|Box310|Take 001|BaseLayer
+  - first:
+      74: 4879363665893873728
+    second: Sphere252|Box311|Take 001|BaseLayer
+  - first:
+      74: 299908805382038718
+    second: Sphere252|Box312|Take 001|BaseLayer
+  - first:
+      74: 1766292054034918148
+    second: Sphere252|Box313|Take 001|BaseLayer
+  - first:
+      74: 6438057621552802527
+    second: Sphere252|Box314|Take 001|BaseLayer
+  - first:
+      74: -2878148259022172569
+    second: Sphere252|Box315|Take 001|BaseLayer
+  - first:
+      74: 3878506796023752771
+    second: Sphere252|Box316|Take 001|BaseLayer
+  - first:
+      74: 4619789936587880987
+    second: Sphere252|Box317|Take 001|BaseLayer
+  - first:
+      74: -239774346993960069
+    second: Sphere252|Box323|Take 001|BaseLayer
+  - first:
+      74: 3160570609253022425
+    second: Sphere252|Box324|Take 001|BaseLayer
+  - first:
+      74: -8363148665833126174
+    second: Sphere252|Box325|Take 001|BaseLayer
+  - first:
+      74: 1827248537092165230
+    second: Sphere252|Box326|Take 001|BaseLayer
+  - first:
+      74: -307786062893000180
+    second: Sphere252|Box327|Take 001|BaseLayer
+  - first:
+      74: 1006329683069119857
+    second: Sphere252|Box328|Take 001|BaseLayer
+  - first:
+      74: -5354620115767218157
+    second: Sphere252|Box329|Take 001|BaseLayer
+  - first:
+      74: -584307833549500217
+    second: Sphere252|Box330|Take 001|BaseLayer
+  - first:
+      74: -8709401878805564860
+    second: Sphere252|Box331|Take 001|BaseLayer
+  - first:
+      74: -5869256585237303352
+    second: Sphere252|Box332|Take 001|BaseLayer
+  - first:
+      74: -1396152623114257473
+    second: Sphere252|Box333|Take 001|BaseLayer
+  - first:
+      74: 6424261314142580190
+    second: Sphere252|Box334|Take 001|BaseLayer
+  - first:
+      74: 5926128979125791875
+    second: Sphere252|Box335|Take 001|BaseLayer
+  - first:
+      74: -5264318347251200853
+    second: Sphere252|Box336|Take 001|BaseLayer
+  - first:
+      74: -4305002259070140564
+    second: Sphere252|Box337|Take 001|BaseLayer
+  - first:
+      74: -5277054867934261374
+    second: Sphere252|Box338|Take 001|BaseLayer
+  - first:
+      74: 8889856677960133663
+    second: Sphere252|Box339|Take 001|BaseLayer
+  - first:
+      74: 2000890475445387242
+    second: Sphere252|GeoSphere002|Take 001|BaseLayer
+  - first:
+      74: 5230715208044754716
+    second: Sphere252|GeoSphere002|Take 001|BaseLayer.001
+  - first:
+      74: -908530482266432569
+    second: Sphere252|GeoSphere003|Take 001|BaseLayer
+  - first:
+      74: 6194779072478352982
+    second: Sphere252|GeoSphere003|Take 001|BaseLayer.001
+  - first:
+      74: -4201050810869002264
+    second: Sphere252|Sphere062|Take 001|BaseLayer
+  - first:
+      74: -8214622561847750435
+    second: Sphere252|Sphere063|Take 001|BaseLayer
+  - first:
+      74: 5641586838852826174
+    second: Sphere252|Sphere064|Take 001|BaseLayer
+  - first:
+      74: 3086416911859701801
+    second: Sphere252|Sphere065|Take 001|BaseLayer
+  - first:
+      74: 304367398807843516
+    second: Sphere252|Sphere066|Take 001|BaseLayer
+  - first:
+      74: 49929777094414924
+    second: Sphere252|Sphere243|Take 001|BaseLayer
+  - first:
+      74: 7636555360160420029
+    second: Sphere252|Sphere250|Take 001|BaseLayer
+  - first:
+      74: 5314643678477093377
+    second: Sphere252|Sphere250|Take 001|BaseLayer.001
+  - first:
+      74: 182747413649926321
+    second: Sphere252|Sphere251|Take 001|BaseLayer
+  - first:
+      74: -6652440268152909994
+    second: Sphere252|Sphere251|Take 001|BaseLayer.001
+  - first:
+      74: 6312845156623541973
+    second: Sphere252|Sphere252|Take 001|BaseLayer
+  - first:
+      74: -1877520728466128624
+    second: Sphere252|Sphere252|Take 001|BaseLayer.001
+  - first:
+      74: -4336569353622896346
+    second: Sphere252|Sphere253|Take 001|BaseLayer
+  - first:
+      74: 5550253146461955855
+    second: Sphere252|Sphere254|Take 001|BaseLayer
+  - first:
+      74: -5009555628685434833
+    second: Sphere252|Sphere255|Take 001|BaseLayer
+  - first:
+      74: -278981644217565753
+    second: Sphere252|Sphere256|Take 001|BaseLayer
+  - first:
+      74: 3663913882702681017
+    second: Sphere252|Sphere257|Take 001|BaseLayer
+  - first:
+      74: -8119125574245083112
+    second: Sphere252|Sphere258|Take 001|BaseLayer
+  - first:
+      74: 7031316572900964133
+    second: Sphere252|Sphere259|Take 001|BaseLayer
+  - first:
+      74: 2641721361791325131
+    second: Sphere252|Sphere260|Take 001|BaseLayer
+  - first:
+      74: -1696321423032224870
+    second: Sphere252|Sphere261|Take 001|BaseLayer
+  - first:
+      74: -4340738004533454395
+    second: Sphere252|Sphere262|Take 001|BaseLayer
+  - first:
+      74: 5166772321237672834
+    second: Sphere252|Sphere263|Take 001|BaseLayer
+  - first:
+      74: -6625698542122093273
+    second: Sphere252|Sphere264|Take 001|BaseLayer
+  - first:
+      74: 7562912649499823632
+    second: Sphere252|Sphere265|Take 001|BaseLayer
+  - first:
+      74: -1364847170057733697
+    second: Sphere252|Sphere266|Take 001|BaseLayer
+  - first:
+      74: 2283846265081892524
+    second: Sphere252|Sphere267|Take 001|BaseLayer
+  - first:
+      74: -1794878375415193404
+    second: Sphere252|Sphere268|Take 001|BaseLayer
+  - first:
+      74: -8557530174658016913
+    second: Sphere252|Sphere269|Take 001|BaseLayer
+  - first:
+      74: 2915330600853303315
+    second: Sphere252|Sphere270|Take 001|BaseLayer
+  - first:
+      74: -6657985236490985462
+    second: Sphere252|Sphere276|Take 001|BaseLayer
+  - first:
+      74: 4779324559794340426
+    second: Sphere252|Sphere277|Take 001|BaseLayer
+  - first:
+      74: -2438664778753492448
+    second: Sphere252|Sphere278|Take 001|BaseLayer
+  - first:
+      74: -4102221534922202868
+    second: Sphere252|Sphere279|Take 001|BaseLayer
+  - first:
+      74: 7220070241418705332
+    second: Sphere252|Sphere280|Take 001|BaseLayer
+  - first:
+      74: 8147639419985910017
+    second: Sphere252|Sphere281|Take 001|BaseLayer
+  - first:
+      74: 316668636114487277
+    second: Sphere252|Sphere282|Take 001|BaseLayer
+  - first:
+      74: -1082440286567055096
+    second: Sphere252|Sphere283|Take 001|BaseLayer
+  - first:
+      74: -3351772440908732691
+    second: Sphere252|Sphere284|Take 001|BaseLayer
+  - first:
+      74: 8130267809510320572
+    second: Sphere252|Sphere285|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
