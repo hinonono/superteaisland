@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    public event onItemPickedDelegate onItemPicked;
+    public delegate void onItemPickedDelegate(int f);
+
     public InventoryObject inventory;
 
     private void OnTriggerEnter(Collider other)
@@ -12,7 +16,9 @@ public class PlayerInventory : MonoBehaviour
         if (item)
         {
             inventory.AddItem(new Item(item.item), 1);
-            Destroy(other.gameObject);
+
+            onItemPicked?.Invoke(25);
+            //Destroy(other.gameObject);
         }
     }
 
