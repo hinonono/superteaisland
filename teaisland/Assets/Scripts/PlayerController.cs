@@ -88,7 +88,10 @@ public class PlayerController : MonoBehaviour
 
     private void DoJump(InputAction.CallbackContext obj)
     {
-        playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        Debug.Log("jumped!");
+        if (groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
+        //Debug.Log("jumped!");
     }
 }
