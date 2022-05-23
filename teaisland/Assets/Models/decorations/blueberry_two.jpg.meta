@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:teaisland/Assets/Models/decorations/branch.jpg.meta
+guid: 13bc812d7f6484a43961e0bebbd8ac02
+========
 guid: b83aa78853459459dbd30a8791e1de86
+>>>>>>>> fab27545221dc086236fbdd4a7dc7e2e53129c4d:teaisland/Assets/Models/decorations/blueberry_two.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
