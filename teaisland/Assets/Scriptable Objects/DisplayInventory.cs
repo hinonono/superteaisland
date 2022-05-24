@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class DisplayInventory : MonoBehaviour
 {
     public GameObject inventoryPrefab;
     public InventoryObject inventory;
+    private PlayerInventory playerInventory;
 
     public int X_START;
     public int Y_START;
@@ -20,12 +22,20 @@ public class DisplayInventory : MonoBehaviour
     void Start()
     {
         CreateDisplay();
+
+        playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
+        playerInventory.onItemPicked += PlayerInventory_onItemPicked;
+    }
+
+    private void PlayerInventory_onItemPicked(int f)
+    {
+        UpdateDisplay();
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateDisplay();
+        
     }
 
     public void UpdateDisplay()

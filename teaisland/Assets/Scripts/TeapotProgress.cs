@@ -9,15 +9,15 @@ public class TeapotProgress : MonoBehaviour
     void Start()
     {
         playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
-        playerInventory.onItemPicked += PlayerInventory_onItemPicked1;
+        playerInventory.onItemPicked += PlayerInventory_onItemPicked;
     }
 
-    private void PlayerInventory_onItemPicked1(int f)
+    private void PlayerInventory_onItemPicked(int f)
     {
-        UpdateUI(f);
+        UpdateTeaportProgress(f);
     }
 
-    private void UpdateUI(int f)
+    private void UpdateTeaportProgress(int f)
     {
         Debug.Log("UI Updated!" + f);
     }
