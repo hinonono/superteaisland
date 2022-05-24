@@ -218,6 +218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1716118213784329287}
+  - component: {fileID: 3966334139982617901}
   m_Layer: 0
   m_Name: Teapot Progress
   m_TagString: Untagged
@@ -247,6 +248,18 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: -10}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 1, y: 1}
+--- !u!114 &3966334139982617901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716118213784329284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c71b8ae46adf4597874cb3226a04029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1716118214028848141
 GameObject:
   m_ObjectHideFlags: 0
