@@ -6865,8 +6865,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799365038}
+  - component: {fileID: 1799365039}
   m_Layer: 5
-  m_Name: Popup
+  m_Name: Item Popup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6894,6 +6895,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1799365039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799365037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a6c057a26fd4264837bf6fb47797c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animateSpeed: 0.5
+  box: {fileID: 902618778}
+  background: {fileID: 1999447465}
 --- !u!1 &1805029251
 GameObject:
   m_ObjectHideFlags: 0
@@ -7706,7 +7722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1792453, g: 0.15072145, b: 0.115833044, a: 0.70980394}
+  m_Color: {r: 0.1792453, g: 0.15072145, b: 0.115833044, a: 0.94509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8557,6 +8573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3380551830650071280, guid: a027fd0da96e24f47a19d7878a943b6c, type: 3}
+      propertyPath: teaItemPopup
+      value: 
+      objectReference: {fileID: 1799365037}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a027fd0da96e24f47a19d7878a943b6c, type: 3}
 --- !u!1001 &3066488323145393988

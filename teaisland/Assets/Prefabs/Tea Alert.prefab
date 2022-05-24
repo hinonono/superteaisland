@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3143022722865019289}
   - component: {fileID: 4609631009903484942}
   m_Layer: 0
-  m_Name: TeaAlert
+  m_Name: Tea Alert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
