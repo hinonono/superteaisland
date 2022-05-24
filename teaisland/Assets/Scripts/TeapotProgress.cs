@@ -30,6 +30,6 @@ public class TeapotProgress : MonoBehaviour
 
         currentProgress += increase;
         progressText.text = currentProgress.ToString();
-        Debug.Log("currentProgress = " + currentProgress);
+        //Debug.Log("currentProgress = " + currentProgress);
     }
 }
