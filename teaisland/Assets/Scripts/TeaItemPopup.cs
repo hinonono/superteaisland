@@ -19,7 +19,7 @@ public class TeaItemPopup : MonoBehaviour
         playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
         playerInventory.onItemTouched += PlayerInventory_onItemTouched;
         playerInventory.onItemTouched += PlayerInventory_onItemExited;
-        openPopup();
+        
     }
 
     private void OnDestroy()
@@ -30,7 +30,7 @@ public class TeaItemPopup : MonoBehaviour
 
     private void PlayerInventory_onItemTouched()
     {
-
+        openPopup();
     }
 
     private void PlayerInventory_onItemExited()
@@ -57,6 +57,6 @@ public class TeaItemPopup : MonoBehaviour
 
     void onComplete()
     {
-        //popup.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

@@ -39,7 +39,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        //onItemExited?.Invoke();
+        onItemExited?.Invoke();
     }
 
     private void Update()
