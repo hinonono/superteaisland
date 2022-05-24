@@ -50,4 +50,17 @@ public class TeaAlert : MonoBehaviour
     {
         alertText.text = text;
     }
+
+    private void OnDestroy()
+    {
+        for (int i = 0; i < hintAreas.Length; i++)
+        {
+            hintAreas[i].GetComponent<HintArea>().onHintAreaTouched -= HintArea_onHintAreaTouched;
+        }
+
+        for (int i = 0; i < walls.Length; i++)
+        {
+            walls[i].GetComponent<WallDetecter>().onWallTouched -= WallDetecter_onWallTouched;
+        }
+    }
 }

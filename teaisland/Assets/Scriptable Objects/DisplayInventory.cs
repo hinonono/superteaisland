@@ -79,5 +79,10 @@ public class DisplayInventory : MonoBehaviour
         return new Vector3(X_START + (X_SPACE_BETWEEN_ITEM * (i % NUMBER_OF_COLUMN)), Y_START + (-Y_SPACE_BETWEEN_ITEMS * (i / NUMBER_OF_COLUMN)), 0f);
     }
 
-    
+    public void OnDestroy()
+    {
+        playerInventory.onItemPicked -= PlayerInventory_onItemPicked;
+    }
+
+
 }
