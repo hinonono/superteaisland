@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:teaisland/Assets/GUI/inventory_sprite.meta
+guid: 9668ecefd2a574b0eaae25585043127f
+folderAsset: yes
+========
 guid: 2f4ba1a3a15482d4e9ed4c286dc1f0bc
+>>>>>>>> fab27545221dc086236fbdd4a7dc7e2e53129c4d:teaisland/Assets/Scenes/Temple.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

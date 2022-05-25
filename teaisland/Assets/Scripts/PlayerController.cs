@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -34,11 +35,15 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         playerInput.Enable();
+
+        playerInput.PlayerMain.Jump.performed += DoJump;
+        playerInput.PlayerMain.Jump.Enable();
     }
 
     private void OnDisable()
     {
         playerInput.Disable();
+        playerInput.PlayerMain.Jump.Disable();
     }
 
     private void Start()
@@ -79,5 +84,14 @@ public class PlayerController : MonoBehaviour
             Quaternion rotaion = Quaternion.Euler(new Vector3(child.localEulerAngles.x, cameraMain.localEulerAngles.y, child.localEulerAngles.z));
             child.rotation = Quaternion.Lerp(child.rotation, rotaion, Time.deltaTime * rotationSpeed);
         }
+    }
+
+    private void DoJump(InputAction.CallbackContext obj)
+    {
+        if (groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
+        //Debug.Log("jumped!");
     }
 }

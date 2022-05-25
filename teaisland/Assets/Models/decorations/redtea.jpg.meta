@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:teaisland/Assets/Models/decorations/redtea_eight.jpg.meta
+guid: 4022c5c0371a24c308f24d023f956f8c
+========
 guid: bfd3d3cb06a084df0b455114cecc4fa3
+>>>>>>>> fab27545221dc086236fbdd4a7dc7e2e53129c4d:teaisland/Assets/Models/decorations/redtea.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
