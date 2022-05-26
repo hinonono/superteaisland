@@ -14,6 +14,10 @@ public class TeaItemPopup : MonoBehaviour
 
     private PlayerInventory playerInventory;
 
+    //Event
+    public event Action onConfirmPressed;
+    public event Action onCancelPressed;
+
     private void OnEnable()
     {
         playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
@@ -57,6 +61,22 @@ public class TeaItemPopup : MonoBehaviour
 
     void onComplete()
     {
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
+
+
+    //在Editor給確認、取消按鈕選用以下func
+    public void confirmPressed()
+    {
+        onConfirmPressed?.Invoke();
+        closePopup();
+    }
+
+    public void cancelPressed()
+    {
+        onCancelPressed?.Invoke();
+        closePopup();
+    }
+
+    
 }

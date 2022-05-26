@@ -16,25 +16,24 @@ public class PlayerInventory : MonoBehaviour
     public InventoryObject inventory;
     public GameObject teaItemPopup;
 
+    //專門儲存遇到了什麼item
+    private GroundItem ItemMeeted;
+
     private void Start()
     {
-
+        //訂閱popup的確認和取消event
+        teaItemPopup.GetComponent<TeaItemPopup>().onConfirmPressed += TeaItemPopup_onConfirmPressed;
+        teaItemPopup.GetComponent<TeaItemPopup>().onCancelPressed += TeaItemPopup_onCancelPressed;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        var item = other.GetComponent<GroundItem>();
-        if (item)
-        {
-            teaItemPopup.SetActive(true);
-            onItemTouched?.Invoke();
+        teaItemPopup.SetActive(true);
+        onItemTouched?.Invoke();
 
-            //inventory.AddItem(new Item(item.item), 1);
 
-            //onItemPicked?.Invoke(25);
-
-            //Destroy(other.gameObject);
-        }
+        //設定為遇到的item
+        ItemMeeted = other.GetComponent<GroundItem>();
     }
 
     private void OnTriggerExit(Collider other)
@@ -47,8 +46,32 @@ public class PlayerInventory : MonoBehaviour
 
     }
 
+    private void TeaItemPopup_onConfirmPressed()
+    {
+        Debug.Log("ewfiwjfo");
+        if (ItemMeeted)
+        {
+            inventory.AddItem(new Item(ItemMeeted.item), 1);
+            onItemPicked?.Invoke(25);
+        }
+    }
+
+    private void TeaItemPopup_onCancelPressed()
+    {
+
+    }
+
     private void OnApplicationQuit()
     {
         inventory.Container.Items.Clear();
+    }
+
+    private void OnDisable()
+    {
+        if(teaItemPopup != null)
+        {
+            teaItemPopup.GetComponent<TeaItemPopup>().onConfirmPressed -= TeaItemPopup_onConfirmPressed;
+            teaItemPopup.GetComponent<TeaItemPopup>().onCancelPressed -= TeaItemPopup_onCancelPressed;
+        }   
     }
 }
