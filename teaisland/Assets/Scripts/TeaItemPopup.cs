@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TeaItemPopup : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class TeaItemPopup : MonoBehaviour
     //自身相關元件
     public Transform box;
     public CanvasGroup background;
+    public GameObject popupTitle;
+    public GameObject popupDescription;
 
     private PlayerInventory playerInventory;
 
@@ -22,18 +25,20 @@ public class TeaItemPopup : MonoBehaviour
     {
         playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
         playerInventory.onItemTouched += PlayerInventory_onItemTouched;
-        playerInventory.onItemTouched += PlayerInventory_onItemExited;
+        playerInventory.onItemExited += PlayerInventory_onItemExited;
         
     }
 
     private void OnDestroy()
     {
         playerInventory.onItemTouched -= PlayerInventory_onItemTouched;
-        playerInventory.onItemTouched -= PlayerInventory_onItemExited;
+        playerInventory.onItemExited -= PlayerInventory_onItemExited;
     }
 
-    private void PlayerInventory_onItemTouched()
+    private void PlayerInventory_onItemTouched(string itemName, string itemDescription)
     {
+        popupTitle.GetComponent<TextMeshProUGUI>().text = itemName;
+        popupDescription.GetComponent<TextMeshProUGUI>().text = itemDescription;
         openPopup();
     }
 

@@ -15,5 +15,6 @@ MonoBehaviour:
   Id: 4
   uiDisplay: {fileID: 0}
   type: 2
-  description: Bergamottwo
+  itemName: ' bergamottwo'
+  description: I am description of bergamottwo
   buffs: []

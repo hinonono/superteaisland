@@ -15,5 +15,6 @@ MonoBehaviour:
   Id: 2
   uiDisplay: {fileID: 21300000, guid: 3c4f82248a3844d80a69db201729ed12, type: 3}
   type: 2
-  description: Red Tea
+  itemName: red tea
+  description: I am description of red tea
   buffs: []

@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public event Action onItemTouched;
+    public event onItemTouchedDelegate onItemTouched;
+    public delegate void onItemTouchedDelegate(string itemName, string itemDescription);
 
     //當Player離開道具偵測區域時會觸發的event
     public event Action onItemExited;
@@ -28,12 +29,11 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        teaItemPopup.SetActive(true);
-        onItemTouched?.Invoke();
-
-
         //設定為遇到的item
         ItemMeeted = other.GetComponent<GroundItem>();
+
+        teaItemPopup.SetActive(true);
+        onItemTouched?.Invoke(ItemMeeted.item.itemName, ItemMeeted.item.description);
     }
 
     private void OnTriggerExit(Collider other)
@@ -52,7 +52,7 @@ public class PlayerInventory : MonoBehaviour
         if (ItemMeeted)
         {
             inventory.AddItem(new Item(ItemMeeted.item), 1);
-            onItemPicked?.Invoke(ItemMeeted.item.description, 1);
+            onItemPicked?.Invoke(ItemMeeted.item.itemName, 1);
         }
     }
 
