@@ -27,7 +27,7 @@ public class DisplayInventory : MonoBehaviour
         playerInventory.onItemPicked += PlayerInventory_onItemPicked;
     }
 
-    private void PlayerInventory_onItemPicked(int f)
+    private void PlayerInventory_onItemPicked(string itemName, int quantity)
     {
         UpdateDisplay();
     }

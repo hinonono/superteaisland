@@ -16,9 +16,9 @@ public class TeapotProgress : MonoBehaviour
         progressText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
-    private void PlayerInventory_onItemPicked(int f)
+    private void PlayerInventory_onItemPicked(string itemName, int quantity)
     {
-        UpdateTeaportProgress(f);
+        UpdateTeaportProgress(quantity);
     }
 
     private void UpdateTeaportProgress(int increase)

@@ -11,6 +11,8 @@ public class TeaAlert : MonoBehaviour
     private TextMeshProUGUI alertText;
     public bool findHintArea;
 
+    private PlayerInventory playerInventory;
+
     private void Start()
     {
         alertText = GetComponentInChildren<TextMeshProUGUI>();
@@ -39,6 +41,9 @@ public class TeaAlert : MonoBehaviour
         {
             walls[i].GetComponent<WallDetecter>().onWallTouched += WallDetecter_onWallTouched;
         }
+
+        playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
+        playerInventory.onItemPicked += PlayerInventory_onItemPicked;
     }
 
     private void WallDetecter_onWallTouched(object sender, EventArgs e)
@@ -49,6 +54,11 @@ public class TeaAlert : MonoBehaviour
     private void HintArea_onHintAreaTouched(string text)
     {
         alertText.text = text;
+    }
+
+    private void PlayerInventory_onItemPicked(string itemName, int quantity)
+    {
+        alertText.text = itemName + " * " + quantity + " has added to your inventory!";
     }
 
     private void OnDisable()

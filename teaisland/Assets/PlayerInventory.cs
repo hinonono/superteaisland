@@ -11,7 +11,7 @@ public class PlayerInventory : MonoBehaviour
     public event Action onItemExited;
 
     public event onItemPickedDelegate onItemPicked;
-    public delegate void onItemPickedDelegate(int f);
+    public delegate void onItemPickedDelegate(string itemName, int quantity);
 
     public InventoryObject inventory;
     public GameObject teaItemPopup;
@@ -52,7 +52,7 @@ public class PlayerInventory : MonoBehaviour
         if (ItemMeeted)
         {
             inventory.AddItem(new Item(ItemMeeted.item), 1);
-            onItemPicked?.Invoke(25);
+            onItemPicked?.Invoke(ItemMeeted.item.description, 1);
         }
     }
 
