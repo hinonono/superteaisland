@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - Wall
+  - HintArea
   layers:
   - Default
   - TransparentFX

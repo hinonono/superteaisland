@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class DisplayInventory : MonoBehaviour
 {
     public GameObject inventoryPrefab;
     public InventoryObject inventory;
+    private PlayerInventory playerInventory;
 
     public int X_START;
     public int Y_START;
@@ -20,12 +22,20 @@ public class DisplayInventory : MonoBehaviour
     void Start()
     {
         CreateDisplay();
+
+        playerInventory = GameObject.Find("Player").GetComponent<PlayerInventory>();
+        playerInventory.onItemPicked += PlayerInventory_onItemPicked;
+    }
+
+    private void PlayerInventory_onItemPicked(string itemName, int quantity)
+    {
+        UpdateDisplay();
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateDisplay();
+        
     }
 
     public void UpdateDisplay()
@@ -69,5 +79,10 @@ public class DisplayInventory : MonoBehaviour
         return new Vector3(X_START + (X_SPACE_BETWEEN_ITEM * (i % NUMBER_OF_COLUMN)), Y_START + (-Y_SPACE_BETWEEN_ITEMS * (i / NUMBER_OF_COLUMN)), 0f);
     }
 
-    
+    public void OnDestroy()
+    {
+        playerInventory.onItemPicked -= PlayerInventory_onItemPicked;
+    }
+
+
 }

@@ -22,7 +22,9 @@ public abstract class ItemObject : ScriptableObject
     public int Id;
     public Sprite uiDisplay;
     public ItemType type;
-    [TextArea(15, 20)]
+    [TextArea(5, 10)]
+    public string itemName;
+    [TextArea(5, 10)]
     public string description;
     public ItemBuff[] buffs;
 

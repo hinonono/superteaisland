@@ -15,5 +15,6 @@ MonoBehaviour:
   Id: 3
   uiDisplay: {fileID: 21300000, guid: 7dd52f9bbb45a405cbde85c757f9f533, type: 3}
   type: 2
-  description: 
+  itemName: blueberry
+  description: I am description of blueberry.
   buffs: []

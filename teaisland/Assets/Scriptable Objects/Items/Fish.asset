@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7351ebb88b1414a819c3964d761a6c20, type: 3}
   m_Name: Fish
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4406995934749883419, guid: b33d35b8895484152a8a7773ccb2c1b6, type: 3}
+  Id: 1
+  uiDisplay: {fileID: 0}
   type: 0
   description: 
-  restoreHealthValue: 16
+  buffs: []
