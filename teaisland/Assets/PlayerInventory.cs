@@ -29,11 +29,15 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //設定為遇到的item
-        ItemMeeted = other.GetComponent<GroundItem>();
 
-        teaItemPopup.SetActive(true);
-        onItemTouched?.Invoke(ItemMeeted.item.itemName, ItemMeeted.item.description);
+        if (other.GetComponent<GroundItem>())
+        {
+            //設定為遇到的item
+            ItemMeeted = other.GetComponent<GroundItem>();
+
+            teaItemPopup.SetActive(true);
+            onItemTouched?.Invoke(ItemMeeted.item.itemName, ItemMeeted.item.description);
+        }
     }
 
     private void OnTriggerExit(Collider other)
