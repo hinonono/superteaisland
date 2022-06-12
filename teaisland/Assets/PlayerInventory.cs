@@ -36,7 +36,7 @@ public class PlayerInventory : MonoBehaviour
             ItemMeeted = other.GetComponent<GroundItem>();
 
             teaItemPopup.SetActive(true);
-            onItemTouched?.Invoke(ItemMeeted.item.itemName, ItemMeeted.item.description);
+            onItemTouched?.Invoke(ItemMeeted.item.itemName, ItemMeeted.item.flavor);
         }
     }
 

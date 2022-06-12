@@ -24,8 +24,20 @@ public abstract class ItemObject : ScriptableObject
     public ItemType type;
     [TextArea(5, 10)]
     public string itemName;
-    [TextArea(5, 10)]
-    public string description;
+
+    //will be deprecated
+    //[TextArea(5, 10)]
+    //public string description;
+
+    [TextArea(2, 10)]
+    public string flavor;
+    [TextArea(2, 10)]
+    public string effect;
+    [TextArea(2, 10)]
+    public string coordination;
+
+
+
     public ItemBuff[] buffs;
 
     public Item CreateItem()
@@ -41,10 +53,20 @@ public class Item
     public string Name;
     public int Id;
     public ItemBuff[] buffs;
+
+    public string flavor;
+    public string effect;
+    public string coordination;
+
     public Item(ItemObject item)
     {
         Name = item.name;
         Id = item.Id;
+
+        flavor = item.flavor;
+        effect = item.effect;
+        coordination = item.coordination;
+
         buffs = new ItemBuff[item.buffs.Length];
         for (int i = 0; i < buffs.Length; i++)
         {
